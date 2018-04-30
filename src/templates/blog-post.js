@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 const Template = ({ data, location }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
+  const { title, date } = frontmatter
 
   return (
     <div>
